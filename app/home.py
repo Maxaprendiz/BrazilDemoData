@@ -2,7 +2,6 @@ import streamlit as st
 from load_data import load_data
 from functions import *
 from ui import make_sidebar
-from utils import load_css
 import plotly.express as px
 
 
@@ -17,7 +16,7 @@ def main():
     page_icon='🇧🇷',
     layout="wide",
     initial_sidebar_state="expanded")
-    load_css()
+
 
     (geojson, df_regions, df_population, df_population_growth, df_sex_ratio, df_idade, df_population_reg, df_population_growth_year, 
     df_sexos_brasil, df_idade_cor, df_densidade, df_race, df_alfabetizacao) = load_data()
